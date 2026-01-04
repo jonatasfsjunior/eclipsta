@@ -2,9 +2,11 @@
 title: Política de Cookies
 layout: page
 show_sidebar: false
+hero_height: is-small
+description: Saiba mais sobre nossa política de cookies.
 ---
 
-Política de Cookies
+## Política de Cookies
 
 Última atualização: 12 de Outubro de 2025
 
