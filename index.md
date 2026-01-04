@@ -1,9 +1,10 @@
 ---
-title:
-subtitle:
+title: Eclipsta Studio
+subtitle: Início
 layout: page
 show_sidebar: false
 hide_hero: true
+description: Página Inicial
 ---
 
 <!--<div class="index-banner">
@@ -22,21 +23,18 @@ hide_hero: true
 }
 </style>-->
 
-<!--# Últimas Novidades
-Cartão de Posts Horizontal
-Confira todas as postagens-->
-# Últimas novidades
+## Últimas novidades
 {% include post-card-horizontal.html %}
 
 <!-- Eclipsta Studios - Sobre a empresa-->
 
 <!-- Nossos trabalhos
 Confira nossa loja-->
-# Nossos Trabalhos
+## Nossos Trabalhos
 
 {% include image-card.html folder="img/cards" %}
 
-# Sentido-se perdido?
+## Sentido-se perdido?
 
 Acesse os principais links aqui.
 

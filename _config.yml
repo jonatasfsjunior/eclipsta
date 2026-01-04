@@ -3,18 +3,16 @@ theme: bulma-clean-theme
 title: Eclipsta Studio
 tagline:
 email: 
-description: >
-  Onde a luz encontra a forma.
-baseurl: ""
-url: "https://"
+description: Onde a luz encontra a forma.
+baseurl: "/"
+url: "https://eclipstastudio.vercel.app/"
 permalink: pretty
 favicon: "/img/Eclipsta.svg"
 gh_sponsor: 
 #hide_share_buttons: true
 fixed_navbar: top
-#direction: one of <ltr, rtl, auto>, default: ltr
+direction: ltr #ltr, rtl, auto
 force_theme: dark
-
 langs:
   - pt
   - en
@@ -28,6 +26,8 @@ paginate_path: "/blog/page:num"
 disqus:
   # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
   shortname:
+
+include: [llms.txt]
 
 plugins:
   - jekyll-sitemap
@@ -47,6 +47,9 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - jstudio3design
+  - .vscode/
+  - .github/
+
 
 livereload: true
 
@@ -57,7 +60,7 @@ sass:
     # - node_modules
 
 #google_analytics: UA-code-here
-#cookie_policy: /cookie-policy/
+cookie_policy: /cookie-policy/
 
 defaults:
   -
@@ -89,3 +92,28 @@ collections:
     show_sidebar: false
 
 social:
+  - facebook: #Add your Facebook
+  - twitter: #Add your Twitter
+  - google-plus: #Add your Google+
+  - github: #Add your GitHub
+  - instagram: #Add your Instagram
+  - linkedin: #Add your LinkedIn
+  - pinterest: #Add your Pinterest
+  - youtube: #Add your YouTube
+  - behance: #Add your Behance
+  - dribbble: #Add your Dribbble
+  - whatsapp: #Add your WhatsApp
+  - telegram: #Add your Telegram
+  - twitch: #Add your Twitch
+  - discord: #Add your Discord
+  - reddit: #Add your Reddit
+  - skype: #Add your Skype
+  - stack-overflow: #Add your Stack Overflow
+  - medium: #Add your Medium
+  - spotify: #Add your Spotify
+  - soundcloud: #Add your SoundCloud
+  - tumblr: #Add your Tumblr
+  - flickr: #Add your Flickr
+  - vimeo: #Add your Vimeo
+  - rss: #/feed.xml
+  - email: #mailto:
