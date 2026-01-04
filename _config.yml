@@ -4,8 +4,8 @@ title: Eclipsta Studio
 tagline:
 email: 
 description: Onde a luz encontra a forma.
-baseurl: "/"
-url: "https://eclipstastudio.vercel.app/"
+baseurl: ""
+url: ""
 permalink: pretty
 favicon: "/img/Eclipsta.svg"
 gh_sponsor: 
@@ -57,6 +57,7 @@ livereload: true
 sass:
   style: compressed
   source_dir: _sass
+  quiet_deps: true
   # load_paths: 
     # - node_modules
 
