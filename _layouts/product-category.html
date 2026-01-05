@@ -35,7 +35,14 @@ hero_height: is-small
                         <p class="title is-4">{{ product.title }}</p>
                         <p class="subtitle is-4">{{ product.subtitle }}</p>
                         <br>
-                        <p class="title is-5 has-text-right">R${{ product.price-br }}</p>
+                        <p class="title is-5 has-text-right">
+                            R$
+                            {%- if site.lang == 'pt' -%}
+                                {{- product['price-br'] -}}
+                            {%- else -%}
+                                {{- product['price-us'] -}}
+                            {%- endif %}
+                        </p>
                     </div>
                 </div>
             </a>

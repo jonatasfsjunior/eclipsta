@@ -8,10 +8,11 @@ image: /img/products/duster2011-lp/duster.png
 hero_image: /img/products/duster2011-lp/duster-front-side.png
 hero_height: is-small
 hero_darken: true
-permalink: :categories/:day/:short_month/:year/:week/:title
+#permalink: :categories/:day/:short_month/:year/:week/:title
 canonical_url: 
 categories: Veículos
 tags: [Carros,Low-Poly,GTA SA,Game-ready,Modelo 3D,]
 series: Veículos Low-Poly
 published: true
+keywords:
 ---
