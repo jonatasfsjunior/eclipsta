@@ -1,8 +1,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="{{ site.theme_color | default: '#ffffff' }}">
-<meta name="description" content="{{ site.description | default: '' }}">
-<meta name="title" content="{{ site.title | default: 'Eclipsta Studio' }}">
-<meta name="keywords" content="Design 3D, Blog, Store">
+<meta
+    name="description"
+    content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
+>
+<meta name="title" content="{{ page.title }} - {{ site.title | default: 'Eclipsta Studio' }}">
+<meta name="keywords" content="Design 3D, Blogue, Loja">
 <meta name="robots" content="index, follow">
-<meta name="author" content="Jonatas F Junior">
+<meta name="author" content="{{ page.author }}">
+
+<!-- Open Graph -->
+{% if page.layout == 'post' %}
+    <meta property="og:type" content="article">
+{% else %}
+    <meta property="og:type" content="website">
+{% endif %}
+
+<meta property="og:title" content="{{ page.title }} - {{ site.title | default: 'Eclipsta Studio' }}">
+<meta
+    property="og:description"
+    content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
+>
