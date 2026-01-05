@@ -1,9 +1,14 @@
 # Site Settings
 theme: bulma-clean-theme
 title: Eclipsta Studio
-tagline:
+tagline: Onde a luz encontra a forma.
 email: 
-description: Onde a luz encontra a forma.
+description: >
+  Adquira modelos 3D de alta qualidade para seus projetos.
+  Somos especializados em design de veículos para uso em Jogos.
+  Trabalhamos com excelência para entregar o melhor resultado.
+  Atendemos a pedidos personalizados.
+  Dê luz aos seus projetos com a Eclipsta Studio!
 baseurl: ""
 url: "https://eclipstastudio.vercel.app/"
 permalink: pretty
@@ -82,6 +87,10 @@ defaults:
       layout: post
       image:
       show_sidebar: true
+  - scope:
+      path: ""
+    values:
+      image: /img/Eclipsta.svg
 
 markdown: kramdown
 highlighter: rouge
