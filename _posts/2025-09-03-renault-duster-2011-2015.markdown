@@ -1,6 +1,6 @@
 ---
 layout: post
-date:   2026-01-01 12:00:00 # YYYY-MM-DD HH:MM:SS +/-0300
+date:   2026-01-01 12:00:00:00 -300 # YYYY-MM-DD HH:MM:SS +/-0300
 title:  Renalt Duster 2011
 subtitle:
 description: Modelo 3D Renalt Duster 2011-2015
@@ -8,10 +8,10 @@ image: /img/products/duster2011-lp/duster.png
 hero_image: /img/products/duster2011-lp/duster-front-side.png
 hero_height: is-small
 hero_darken: true
-published: false
 permalink: :categories/:day/:short_month/:year/:week/:title
 canonical_url: 
 categories: Veículos
 tags: [Carros,Low-Poly,GTA SA,Game-ready,Modelo 3D,]
-series:
+series: Veículos Low-Poly
+published: true
 ---
