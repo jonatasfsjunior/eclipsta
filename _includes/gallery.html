@@ -1,24 +1,46 @@
-{% if page.gallery %}
-    {% assign galleries=site.data.[page.gallery] %}
-    {% for gallery in galleries %}
-        <div class="columns is-multiline">
-            <div class="column is-12">
-                <p class="title is-3 has-text-centered">{{ gallery.title }}</p>
-            </div>
-            {% for image in gallery.images %}
-                <div class="column is-4-desktop is-6-tablet">
-                    <div class="card">
-                        <div class="card-image">
-                            {% include image-modal.html ratio=image.ratio link=image.link alt=image.alt large_link=image.large_link %}
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                {{ image.description | markdownify }}
-                            </div>
-                        </div>
-                    </div>
+<div class="image-gallery">
+    {% assign sorted = site.static_files | sort: 'date' | reverse %}
+    {% for file in sorted %}
+        {% assign include_folder = '/img/gallery/' %}
+        {% if file.path contains include_folder %}
+            {% if file.extname == '.jpg' or file.extname == '.png' %}
+                {% assign filenameparts = file.path | split: '/' %}
+                {% assign filename = filenameparts | last | replace: file.extname, '' %}
+                {% assign img_path = '/img/gallery' | append: filename | append: '.jpg' %}
+                <div class="box">
+                    <a href="" title="">
+                        <img src="" alt="" class="img-gallery">
+                    </a>
                 </div>
-            {% endfor %}
-        </div>
+            {% endif %}
+        {% endif %}
     {% endfor %}
-{% endif %}
+</div>
+
+<style>
+    .image-gallery {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        justify-content: center;
+        padding: 4px;
+    }
+
+    .box {
+        flex-basis: 25%;
+        width: 100%;
+        padding: 10px;
+        margin: 2px;
+    }
+
+    .img-gallery {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        transform: scale(1);
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+</style>

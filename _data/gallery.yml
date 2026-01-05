@@ -1,7 +1,7 @@
 - title:
   images:
-    - link: https://picsum.photos/id/16/600/480
-      large_link: https://picsum.photos/id/16/1200/960
+    - link: img/products/duster2011-lp/duster-back.png
+      large_link: img/products/duster2011-lp/duster-back.png
       alt: The alt text for the image
       description: The image description
       ratio: is-4by3

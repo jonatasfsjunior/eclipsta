@@ -50,6 +50,8 @@ exclude:
   - jstudio3design
   - .vscode/
   - .github/
+  - _includes/gallery.html
+  - gallery.md
 
 
 livereload: true
