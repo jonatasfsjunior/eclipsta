@@ -4,7 +4,6 @@ subtitle: Início
 layout: page
 show_sidebar: false
 hide_hero: true
-description: Página Inicial
 ---
 
 <!--<div class="index-banner">
